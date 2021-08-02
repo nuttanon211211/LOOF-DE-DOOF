@@ -43,6 +43,7 @@ Run game.py
 - draw 2 card but heals 3 damage (multiple effect not seperated by a dot(".") )
 - heals 3 damage if you do draw 2 cards from the top of your deck (complicated)
 - this card damage opponent by 1 damage, heals 3 damage from you,and if you do draw 2 cards from the top of your deck (complicated, not seperated by dots)
+- ... (No effect texts)
 
 
 ### owo
