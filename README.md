@@ -13,6 +13,9 @@ Run game.py
 - Decklist is the text file ended with .deck
 - Each line of the in the file is in the card format
 
+   Any line of text that does not have exactly three commas(",") is cosidered to be a note. So you can take a note like deck name and deck description
+
+
 ### The Card format
 - [No. of Cards(number of copies)], Card_Name, Cost_of_card, Card_Effect
 - Example :  2, PURRFECT CREATION, P1C1N1O1, DRAW 4
