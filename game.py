@@ -89,7 +89,7 @@ loadDeckHandler(P1,P2)
 playAgain = True
 while (playAgain):
 	game(P1,P2)
-	value = input("Play Again (Y , N)")
+	value = input("Play Again (Y , N): ")
 	while value.strip().upper() not in ["Y","N"]:
 		value = input("Play Again (Y , N)")
 	if  value.strip().upper() == "N":

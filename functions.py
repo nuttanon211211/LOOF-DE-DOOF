@@ -252,7 +252,7 @@ def totalLandCost(player):
         O += aO
     return P,C,N,O
         
-#Checkif player can play a card
+#Check if player can play a card
 def canPlay(card,player):
     #costLand is #,#,#,#   P.C.N.O
     costLand = totalLandCost(player)
@@ -265,6 +265,36 @@ def canPlay(card,player):
         if costCard[i] > costLand[i]:
             return False
     return True
+    
+#Return character indicates ablity to play a card
+def canPlayChar(card,player):
+	if canPlay(card,player):
+		return "O"
+	else:
+		return "X"
+
+
+#Print cards in the hand
+def printHand(player):
+	cards = player['Hand']
+	num_card = len(cards)
+	if num_card == 0:
+		print("You have no card left in your hand.")
+	else:
+		for i in range(num_card):
+			print(canPlayChar(cards[i],player)+" {"+str(i+1)+"}",description(cards[i]))
+	
+#Select card in the hand	
+def playerHandSelector(player):
+	printHand(player)
+	cards = player['Hand']
+	if len(cards) == 0:
+		return False
+	value = input("Please enter a card number that you want to use:\n")
+	while(value.isdigit()==False or int(value)<1 or int(value)>len(cards)):
+		value = input("Please enter a card NUMBER that you want to use:\n")
+	return int(value)	
+	
     
     
 #Check if player can play non-land card
@@ -429,7 +459,7 @@ def turn(player,otherPlayer):
         if loseHandler(player): return True
         
         print("Your HP",healthPoint(player)," : ","Opponent HP",healthPoint(otherPlayer))
-        printCard(player["Hand"])
+        printHand(player)
         value = input("[Number]:play card E:end turn O:other :\n")
         while ((value.strip().upper() not in command) and \
                (value.strip().isdigit() == False or int(value)<1 or int(value)>len(player["Hand"]) ) ):
