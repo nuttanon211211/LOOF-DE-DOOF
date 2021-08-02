@@ -18,6 +18,7 @@ Run game.py
 - Example :  2, PURRFECT CREATION, P1C1N1O1, DRAW 4
 - No.of cards is the positive integer
 - Card Name is anything that do not have commas (",")
+- Cost of a Card is Upper-case P,C,N,O followed by a number(positive integer or zero) with nothing in between. The order of each cost elements do not matter
 
 
 
