@@ -46,9 +46,9 @@ Run game.py
 - ... (No effect texts)
 
 ### Get Creative with card Effects
--Hi I am Blissey, If you use me i will heal 3 damage from your and you will be healthier
--I am the pot of greed, When you play me I will draw 2 cards from top of your deck
--Zeraora V can do 160 damage to your opponent benched pokemon if certain codition is met
+- Hi I am Blissey, If you use me i will heal 3 damage from your and you will be healthier
+- I am the pot of greed, When you play me I will draw 2 cards from top of your deck
+- Zeraora V can do 160 damage to your opponent benched pokemon if certain codition is met
 
 
 ### owo
