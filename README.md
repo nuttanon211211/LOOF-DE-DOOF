@@ -19,7 +19,7 @@ Run game.py
 - No.of cards is the positive integer
 - Card Name is anything that do not have commas (",")
 - Cost of a Card is Upper-case P,C,N,O followed by a number(positive integer or zero) with nothing in between. The order of each cost elements do not matter
-- Card Effect anything with effect number. The number must be Arabic numeral (1,2,3) but not the word (one,two,three). Multiple effects are seperated by a dot (".")
+- Card Effect anything with effect number. The number must be Arabic numeral (1,2,3) but not the word (one,two,three). Multiple effects are seperated by a dot (".") (currently not tested)
  
 
 ### Valid cost example
@@ -29,6 +29,17 @@ Run game.py
     N3P1C2O4
     N10 O10 P5 C1
     O10-P5
+    
+### Valid card Effects
+ - DRAW 2
+ - HEAL 1
+ - DAMAGE 4
+ - draws 2 cards
+ - heal you life by 5
+ - Opponent takes 100 damages
+
+### May not valid card Effects
+- Draw two cards (Number is a word)
 
 
 ### owo
