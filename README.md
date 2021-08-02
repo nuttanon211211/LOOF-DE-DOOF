@@ -21,6 +21,14 @@ Run game.py
 - Cost of a Card is Upper-case P,C,N,O followed by a number(positive integer or zero) with nothing in between. The order of each cost elements do not matter
 
 
+### Valid cost example
+    P1C1N1O1
+    P1C1
+    P1C1N0O0
+    N3P1C2O4
+    N10 O10 P5 C1
+    O10-P5
+
 
 ### owo
 This app required tensorflow but not limited to
