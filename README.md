@@ -53,6 +53,14 @@ Run game.py
 - I am the pot of greed, When you play me I will draw 2 cards from top of your deck
 - Zeraora V can do 160 damage to your opponent benched pokemon if certain codition is met
 
+### Rules
+- Player HP is the number of cards in the deck and in discarded combined
+- Player with HP equal (or less than) zero lose the game
+- When no card in the deck, player's discarded is shuffled and put back to the deck
+- You can play anything as long as you can pay the cost
+- You can pay the cost using Land cards
+- You can play no more than one land per your turn
+- (Don't worry about ruling too much, the game is run automatically)
 
-### owo
+### uwu
 This app required tensorflow but not limited to
